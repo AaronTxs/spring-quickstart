@@ -1,0 +1,26 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: dev
+
+---
+#默认设置
+spring:
+  profiles: default
+server:
+  port: 9999
+---
+# 开发环境配置
+spring:
+  profiles: dev   
+server:
+   port: 9001
+   
+---
+# 测试环境配置
+spring:
+  profiles: test   
+server: 
+  port: 9002   
+ 
