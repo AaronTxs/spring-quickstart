@@ -12,7 +12,28 @@ spring-boot-starter-web依赖：
 * spring web mvc
 
 # 认识application.properties
-该文件为项目的默认配置文件，格式为：“key:value”，key可以有多级，如：`server.port: 8888`
+该文件为项目的默认配置文件，格式为：“key:value”，key可以有多级，如：`server.port: 8888`，默认`server.port`为8080，可以在配置文件中重新指定。
+
+如果设置为0，则随机使用一个端口启动项目。
+
+# 自定义启动banner
+
+* 方式1：打印自定义文本
+ 
+ 在`src/main/resources`下新建一个`banner.txt`文件，`banner.txt`中填写好需要打印的字符串内容即可
+
+网站http://www.network-science.de/ascii/将文字转化成字符串
+
+网站http://www.degraeve.com/img2txt.php可以将图片转化成字符串
+ 
+* 方式2：打印动态banner
+
+在`src/main/resources`下新建一个`banner.gif`文件，spring boot 2+可以打印动态banner
+
+会把gif图片每一帧都打印出来
+
+ps:
+如果banner.gif和banner.txt都存在，则依次打印
 
 # 关闭启动banner
 启动项目时，会在Console视图上打印SpringBoot的banner（可以看到当前使用的版本），可以通过以下方式关闭：
@@ -39,3 +60,6 @@ spring.main.banner-mode:off
 可选值有：off、console（默认值）、log，不区分大小写
 
 如果以上两种方式都设置了，会以方案2的为准
+
+# 参考
+* [Spring Boot 更换 Banner](http://www.ityouknow.com/springboot/2018/03/03/spring-boot-banner.html)

@@ -1,6 +1,10 @@
+[TOC]
+
 # 1.默认配置文件采用Yaml格式
+
+
 1. 将application.properties重命名为application.yml
-2. 内容按照yaml格式编写即可
+2. 内容按照[yaml格式](https://docs.spring.io/spring-boot/docs/1.2.3.RELEASE/reference/html/boot-features-external-config.html#boot-features-external-config-yaml)编写即可
 	- Yaml不支持Tab，只支持空格
 	-  键与值之间冒号后需要紧跟空格
 	
@@ -23,10 +27,8 @@ spring:
 ```
 强烈推荐使用true、false来表示布尔值。	
 
-# 3.SpringBoot读取自定义yml文件
-
 # 附录
-1. yaml解析器依赖关系
+## 1. yaml解析器依赖关系
 
 ```
 spring-boot-starter-web->spring-boot-starter->snakeyaml
@@ -34,4 +36,3 @@ spring-boot-starter-web->spring-boot-starter->snakeyaml
 小技巧：
 
 可以通过Eclipse打开项目工程中的pom.xml文件，切换到`Dependency Hierarchy`选项卡，选中右侧的`Resolved Dependencies`中的`snakeyaml`,在左侧`Dependency Hierarchy`区域即会显示该组件的层级依赖关系。
-

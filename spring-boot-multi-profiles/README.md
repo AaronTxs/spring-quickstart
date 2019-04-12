@@ -16,7 +16,7 @@ spring:
 
 也可以将项目打包为jar，运行时指定环境变量即可，如`java -jar spring-boot-multi-profiles.jar --spring.profiles.active=test`
 
-# 2.多文件实现多环境配置
+# 2.多文件实现多环境配置（推荐）
 文件名格式为：`application-{profile}.properties`或`application-{profile}.yml`
 
 application.yml

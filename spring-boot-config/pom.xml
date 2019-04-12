@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>aaron</groupId>
-	<artifactId>spring-boot-lombok</artifactId>
+	<artifactId>spring-boot-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-lombok</name>
+	<name>spring-boot-config</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -21,7 +21,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
@@ -30,8 +30,8 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>			 
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>			 
 		</dependency>
 	</dependencies>
 

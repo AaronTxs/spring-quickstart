@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>aaron</groupId>
-	<artifactId>spring-boot-lombok</artifactId>
+	<artifactId>spring-boot-quickstart</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-lombok</name>
+	<name>spring-boot-quickstart</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -28,10 +28,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>			 
 		</dependency>
 	</dependencies>
 
