@@ -1,0 +1,18 @@
+# 设置服务名
+spring:
+  application:
+    name: hello-consumer
+
+# 设置服务信息    
+server:
+  port: 9001
+
+# 设置注册中心地址  
+eureka:
+  client:   
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/,http://localhost:8001/eureka/,http://localhost:8003/eureka/
+      
+feign:
+  hystrix:
+    enabled: true

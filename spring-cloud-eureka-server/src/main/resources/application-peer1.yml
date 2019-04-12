@@ -1,0 +1,18 @@
+# 设置服务名
+spring:
+  application:
+    name: eureka-server
+# 设置服务信息    
+server:
+  port: 8001
+  
+eureka:
+  instance:
+    hostname: peer1
+  client:    
+    #向注册中心注册自己
+    register-with-eureka: true     
+    #检索服务    
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://peer2:8002/eureka/,http://peer3:8003/eureka/
