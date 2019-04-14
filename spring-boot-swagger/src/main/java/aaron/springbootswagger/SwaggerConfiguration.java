@@ -1,29 +1,3 @@
-﻿Spring Boot集成Swagger2
-===
-
-# 引入Swagger jar包
-pom.xml中加入
-
-```xml
-<dependency>
-	<groupId>io.springfox</groupId>
-	<artifactId>springfox-swagger2</artifactId>
-</dependency>
-<dependency>
-	<groupId>io.springfox</groupId>
-	<artifactId>springfox-swagger-ui</artifactId>
-	<version>2.7.0</version>
-</dependency>
-```
-# 配置Swagger入口
-新建SwaggerConfiguration.java配置&开启Swagger
-- @Configuration：自动配置Swagger信息，
-- @EnableSwagger2：启用Swagger功能
-- basePackage：指明需要扫描的包路径
-- apiInfo：创建Api的基本信息（作者、版本、描述等）
-- select：用ApiSelectorBuilder来控制哪些接口暴露给Swagger（除了标记有@ApiIgnore的接口外）
-
-```java
 package aaron.springbootswagger;
 
 import org.springframework.context.annotation.Bean;
@@ -47,7 +21,7 @@ public class SwaggerConfiguration {
 	 */
 	@Bean
 	public Docket createRestfulApi() {
-		return new Docket(DocumentationType.SWAGGER_2).apiInfo(restfulApiInfo()).select()				 
+		return new Docket(DocumentationType.SWAGGER_2).apiInfo(restfulApiInfo()).select()
 				.apis(RequestHandlerSelectors.basePackage("aaron.springbootswagger.controllers"))
 				.paths(PathSelectors.any()).build();
 	}
@@ -67,10 +41,3 @@ public class SwaggerConfiguration {
 				.description("API 描述").build();
 	}
 }
-```
-
-# Controller
-
-# 参考
-* [SpirngBoot之整合Swagger2](https://www.cnblogs.com/zhangyinhua/p/9286391.html)
-
