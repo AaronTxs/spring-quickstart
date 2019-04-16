@@ -1,6 +1,6 @@
 package aaron.springbootmybatis.enums;
 
-public enum UserSexEnum {
+public enum Sex {
 	MAN, 
 	WOMAN
 }

@@ -1,4 +1,4 @@
-package aaron.springbootmybatis;
+package aaron.springbootmybatis.mapper;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import aaron.springbootmybatis.enums.UserSexEnum;
+import aaron.springbootmybatis.enums.*;
 import aaron.springbootmybatis.mapper.UserMapper;
 import aaron.springbootmybatis.model.User;
 
@@ -22,9 +22,9 @@ public class UserMapperTest {
 
 	@Test
 	public void testInsert() throws Exception {
-		userMapper.insert(new User(1L,"aa1", "a123456", UserSexEnum.MAN));
-		userMapper.insert(new User(2L，"bb1", "b123456", UserSexEnum.WOMAN));
-		userMapper.insert(new User(3L，"cc1", "b123456", UserSexEnum.WOMAN));
+		userMapper.insert(new User(1L,"a", "123456a", Sex.MAN));
+		userMapper.insert(new User(2L,"b", "123456b", Sex.WOMAN));
+		userMapper.insert(new User(3L,"c", "123456c", Sex.MAN));
 
 		Assert.assertEquals(3, userMapper.getAll().size());
 	}
@@ -32,16 +32,18 @@ public class UserMapperTest {
 	@Test
 	public void testQuery() throws Exception {
 		List<User> users = userMapper.getAll();
+		for (User user : users) {
+			System.out.println(user);	
+		}		
 		System.out.println(users.toString());
 	}
-	
-	
+		
 	@Test
 	public void testUpdate() throws Exception {
-		User user = userMapper.getOne(30l);
+		User user = userMapper.getOne(1L);
 		System.out.println(user.toString());
-		user.setNickName("neo");
+		user.setUserName("a");
 		userMapper.update(user);
-		Assert.assertTrue(("neo".equals(userMapper.getOne(30l).getNickName())));
+		Assert.assertTrue(("a".equals(userMapper.getOne(1L).getUserName())));
 	}
 }
