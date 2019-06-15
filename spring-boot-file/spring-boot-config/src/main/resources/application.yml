@@ -1,0 +1,5 @@
+server:
+  port: ${random.int[10000,19999]}
+spring:
+  main:
+    banner-mode: "off"

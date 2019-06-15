@@ -1,0 +1,23 @@
+server:
+  port: 0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #SpringBoot 2.x 默认只开放了两个端点/actuator/health 和 /actuator/info，这里打开所有的监控点
+      base-path: /monitor #监控路径默认为/actuator/*，这里自定义为/monitor
+  endpoint:
+    health:
+      show-details: always  # NEVER，WHEN_AUTHORIZED，ALWAYS
+    shutdown:
+      enabled: true
+  health:
+    redis:
+      enabled: false # 关闭redis的健康检查
+
+info:
+  app:
+    name: spring-boot-actuator
+    version: 1.0.0
+    test: test

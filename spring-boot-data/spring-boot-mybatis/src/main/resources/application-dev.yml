@@ -1,0 +1,19 @@
+server:
+  port: ${random.int[10000,19999]} # 随机端口，也可用server.port=0来设置
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/springquiskstart?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapping.xml
+  type-aliases-package: aaron.springbootmybatis.entity
+
+#showSql
+logging:
+  path: /log
+  level:
+    aaron:
+      mapper : debug

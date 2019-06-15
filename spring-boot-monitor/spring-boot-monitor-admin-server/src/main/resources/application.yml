@@ -1,0 +1,21 @@
+server:
+  port: 18888
+
+#spring:
+#  mail:
+#    host: localhost
+#    username: xiecf@localmail
+#    password: 123456
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: false # hMailServer 搭建的本地邮箱，没有特别设置认证
+#            required: false # 同上
+#  boot:
+#    admin:
+#      notify:
+#        mail:
+#          from: xiecf@localmail
+#          to: xiecf@localmail

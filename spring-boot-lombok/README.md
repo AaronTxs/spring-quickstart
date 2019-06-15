@@ -10,7 +10,6 @@ lombok插件在ide编译项目时启用，如果直接编译，可以采用如�
 我用的eclipse，所以这里只讲eclipse中`lombok`插件安装
 
 `lombok`官网：<https://projectlombok.org/>
-
 `lombok jar`：<https://projectlombok.org/download>
 
 1. 下载`lombok.jar`
@@ -25,9 +24,8 @@ lombok插件在ide编译项目时启用，如果直接编译，可以采用如�
 
    ps： 步骤2和3也可以，也可以直接双击运行lombok.jar，弹出页面`specify location`选择eclipse安装目录，点击`install/update`安装。
 
-   该动作会把`lombok.jar`拷贝到eclipse目录，并完成对`eclipse.ini`的修改。
-   
-   如果上面几步都做完了，eclipse还是无法编译项目，可以修改eclipse启动参数`-vmargs -javaagent:lombok.jar`。
+   该动作会把`lombok.jar`拷贝到eclipse目录，并完成对`eclipse.ini`的修改
+ 如果上面几步都做完了，eclipse还是无法编译项目，可以修改eclipse启动参数`-vmargs -javaagent:lombok.jar`。
   如：`"D:\Program Files\eclipse\eclipse.exe" -vmargs -javaagent:lombok.jar`
 
 ## 2.2 项目中引入lombok

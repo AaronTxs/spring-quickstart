@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import aaron.springbootlombok.model.User;
+import aaron.springbootlombok.entity.User;
 
 @SpringBootTest
 public class UserTest {

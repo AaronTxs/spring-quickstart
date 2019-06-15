@@ -1,0 +1,13 @@
+server:
+  port: ${random.int[10000,19999]} # 随机端口，还可以使用server.port=0设置
+
+debug: true
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: ERROR
+  path: 
+  file: default.log

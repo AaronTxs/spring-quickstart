@@ -1,4 +1,4 @@
-﻿Spring Boot集成Swagger2
+﻿﻿Spring Boot集成Swagger2
 ===
 [TOC]
 # 引入Swagger jar包
@@ -89,4 +89,3 @@ swagger通过注解表明该接口会生成文档，包括接口名、请求方�
 
 # 参考
 * [SpirngBoot之整合Swagger2](https://www.cnblogs.com/zhangyinhua/p/9286391.html)
-

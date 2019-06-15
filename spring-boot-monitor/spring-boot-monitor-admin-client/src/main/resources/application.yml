@@ -1,0 +1,16 @@
+server:
+  port: 19999
+spring:
+  application:
+    name: admin-client
+  boot:
+    admin:
+      client:
+        url: http://localhost:18888  # 配置spring boot admin server 地址
+        #username: admin # 登录admin server的账号（服务器没设置的话，这里可不配置)(未验证成功）
+        #password: 123456 # 登录密码
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #打开客户端 Actuator 的监控，如果不放开的话，server端只能监控到client实例，拿不到详细信息
