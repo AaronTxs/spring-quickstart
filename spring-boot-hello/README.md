@@ -63,3 +63,6 @@ spring.main.banner-mode:off
 
 # 参考
 * [Spring Boot 更换 Banner](http://www.ityouknow.com/springboot/2018/03/03/spring-boot-banner.html)
+
+## 延伸阅读
+* [SpringBoot配置devtools实现热部署](https://www.cnblogs.com/lspz/p/6832358.html)

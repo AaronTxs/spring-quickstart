@@ -21,6 +21,6 @@ public class UserController {
 
     @RequestMapping("getUser/{id}")
     public String GetUser(@PathVariable int id){
-        return userService.Sel(id).toString();
+        return userService.Query(id).toString();
     }
 }

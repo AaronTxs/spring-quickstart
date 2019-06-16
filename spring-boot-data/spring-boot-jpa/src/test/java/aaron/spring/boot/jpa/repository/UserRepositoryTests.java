@@ -12,7 +12,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import aaron.spring.boot.jpa.entity.User;
 
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class UserRepositoryTests {
@@ -21,11 +20,11 @@ public class UserRepositoryTests {
 	private UserRepository userRepository;
 
 	@Test
-	public void test() throws Exception {
+	public void test() {
 		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);        
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);
 		String formattedDate = dateFormat.format(date);
-		
+
 		userRepository.save(new User("aa1", "aa@126.com", "aa", "aa123456",date));
 		userRepository.save(new User("bb2", "bb@126.com", "bb", "bb123456",date));
 		userRepository.save(new User("cc3", "cc@126.com", "cc", "cc123456",date));
