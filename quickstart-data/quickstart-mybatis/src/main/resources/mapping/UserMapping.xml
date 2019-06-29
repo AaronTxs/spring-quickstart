@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aaron.springboot.quickstart.mybatis.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="aaron.springboot.quickstart.mybatis.entity.User">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="email" jdbcType="VARCHAR" property="email" />
+        <result column="nick_name" jdbcType="VARCHAR" property="nick_name" />
+        <!--<result column="reg_time" jdbcType="VARCHAR" property="reg_time" />-->
+        <result column="user_name" jdbcType="VARCHAR" property="user_name"/>
+    </resultMap>
+
+    <select id="Query" resultType="aaron.springboot.quickstart.mybatis.entity.User">
+        select * from user where id = #{id}
+    </select>
+</mapper>

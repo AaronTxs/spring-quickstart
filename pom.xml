@@ -4,41 +4,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>aaron</groupId>
-    <artifactId>sping-quickstart</artifactId>
-    <packaging>pom</packaging>
+    <groupId>aaron.springboot</groupId>
+    <artifactId>quickstart</artifactId>
     <version>1.0-SNAPSHOT</version>
-  	
-  	<modules>
-        <module>spring-boot-quickstart</module>
-        <module>spring-boot-hello</module>
-        <module>spring-boot-web</module>
-        <module>spring-boot-lombok</module>
-        <module>spring-boot-junit</module>
-        <module>spring-boot-swagger</module>
-        <module>spring-boot-docker</module>
-        <module>spring-boot-monitor</module>
-        <module>spring-boot-data</module>
-        <module>spring-boot-log</module>
-        <module>spring-boot-job</module>
-        <module>spring-boot-file</module>
-        <module>spring-boot-request</module>
-    </modules>
-    
-    <distributionManagement>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <url>http://10.18.193.180:8081/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
 
-    <repositories>
-        <repository>
-            <id>snapshots</id>
-            <url>http://10.18.193.180:8081/nexus/content/repositories/snapshots</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+    <modules>
+        <module>quickstart-automapper</module>
+        <module>quickstart-data</module>
+        <module>quickstart-docker</module>
+        <module>quickstart-file</module>
+        <module>quickstart-hello</module>
+        <module>quickstart-job</module>
+        <module>quickstart-jwt</module>
+        <module>quickstart-log</module>
+        <module>quickstart-lombok</module>
+        <module>quickstart-monitor</module>
+        <module>quickstart-oauth2</module>
+        <module>quickstart-request</module>
+        <module>quickstart-swagger</module>
+        <module>quickstart-test</module>
+        <module>quickstart-web</module>
+    </modules>
 </project>
