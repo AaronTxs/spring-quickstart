@@ -1,0 +1,8 @@
+-- auto Generated on 2019-07-09
+-- DROP TABLE IF EXISTS t_inventory;
+CREATE TABLE t_inventory(
+	id VARCHAR (50) NOT NULL AUTO_INCREMENT COMMENT 'id',
+	product_id VARCHAR (50) NOT NULL DEFAULT '' COMMENT '商品Id',
+	amount INT (11) NOT NULL DEFAULT -1 COMMENT '库存数量',
+	PRIMARY KEY (id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 't_inventory';
