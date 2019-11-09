@@ -1,0 +1,10 @@
+2019-06-03 11:31:19.162  INFO 6900 --- [main] a.s.SpringBootDockerApplicationTests     : Starting SpringBootDockerApplicationTests on itinside-43 with PID 6900 (started by xiecf in E:\Workspace_Eclipse\spring.samples\spring-boot-samples\spring-boot-docker)
+2019-06-03 11:31:19.164  INFO 6900 --- [main] a.s.SpringBootDockerApplicationTests     : No active profile set, falling back to default profiles: default
+2019-06-03 11:31:20.588  INFO 6900 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-03 11:31:20.871  INFO 6900 --- [main] a.s.SpringBootDockerApplicationTests     : Started SpringBootDockerApplicationTests in 2.025 seconds (JVM running for 2.853)
+2019-06-03 11:31:21.170  INFO 6900 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-06-03 11:33:42.102  INFO 3504 --- [main] a.s.SpringBootDockerApplicationTests     : Starting SpringBootDockerApplicationTests on itinside-43 with PID 3504 (started by xiecf in E:\Workspace_Eclipse\spring.samples\spring-boot-samples\spring-boot-docker)
+2019-06-03 11:33:42.103  INFO 3504 --- [main] a.s.SpringBootDockerApplicationTests     : No active profile set, falling back to default profiles: default
+2019-06-03 11:33:43.495  INFO 3504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-03 11:33:43.760  INFO 3504 --- [main] a.s.SpringBootDockerApplicationTests     : Started SpringBootDockerApplicationTests in 1.994 seconds (JVM running for 2.828)
+2019-06-03 11:33:44.034  INFO 3504 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

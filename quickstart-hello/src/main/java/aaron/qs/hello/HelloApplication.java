@@ -1,14 +1,14 @@
-package aaron.springboothello;
+package aaron.qs.hello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootHelloApplication {
+public class HelloApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(SpringBootHelloApplication.class, args);
-		SpringApplication springApplication = new SpringApplication(SpringBootHelloApplication.class);
+		//SpringApplication.run(HelloApplication.class, args);
+		SpringApplication springApplication = new SpringApplication(HelloApplication.class);
 		springApplication.setBannerMode(org.springframework.boot.Banner.Mode.OFF);
 		springApplication.run(args);		 		 
 	}
