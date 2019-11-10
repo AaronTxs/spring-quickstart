@@ -1,0 +1,17 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: springcloud-config-server
+  cloud:
+    config:
+ #     label: spring-config
+      server:
+        git:
+          uri: https://github.com/AaronTxs/spring-quickstart     # 配置git仓库的地址
+          search-paths: springcloud-config                             # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username:                                             # git仓库的账号
+          password:                                             # git仓库的密码
+#          uri: file:///E:/WorkSpace_Java/spring-quickstart/spring-cloud-quickstart/springcloud-config-git/springcloud-config
+#          search-paths: /**
+          
