@@ -1,4 +1,4 @@
-package aaron.springbootswagger.beans;
+package aaron.qs.swagger.beans;
 
 public class User {
 	

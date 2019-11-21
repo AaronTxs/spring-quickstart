@@ -1,4 +1,4 @@
-package aaron.springbootswagger.controllers;
+package aaron.qs.swagger.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import aaron.springbootswagger.beans.ResObject;
-import aaron.springbootswagger.beans.User;
+import aaron.qs.swagger.beans.ResObject;
+import aaron.qs.swagger.beans.User;
 
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

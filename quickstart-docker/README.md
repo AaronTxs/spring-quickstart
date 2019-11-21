@@ -23,5 +23,3 @@ docker run -p 8080:8080 -d --name spring-boot-docker springboot-docker
 * 删除镜像 `docker rmi 镜像名` ,该镜像没有被容器引用
 
 ## 参考
-* [docker - dockerfile构建一个简单的springboot应用镜像](https://my.oschina.net/thinwonton/blog/2967118)
-* [Docker部署运行springboot项目，并使用Dockerfile制作镜像](https://www.cnblogs.com/spll/p/10059542.html)

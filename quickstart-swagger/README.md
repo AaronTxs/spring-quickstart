@@ -8,11 +8,12 @@ pom.xml中加入
 <dependency>
 	<groupId>io.springfox</groupId>
 	<artifactId>springfox-swagger2</artifactId>
+	<version>2.9.2</version>
 </dependency>
 <dependency>
 	<groupId>io.springfox</groupId>
 	<artifactId>springfox-swagger-ui</artifactId>
-	<version>2.7.0</version>
+	<version>2.9.2</version>
 </dependency>
 ```
 # 配置Swagger入口
@@ -89,3 +90,4 @@ swagger通过注解表明该接口会生成文档，包括接口名、请求方�
 
 # 参考
 * [SpirngBoot之整合Swagger2](https://www.cnblogs.com/zhangyinhua/p/9286391.html)
+* [Spring Boot 2.X(十五)：集成 Swagger2 开发 API 文档（在线+离线）](https://juejin.im/post/5dc2260f6fb9a04aad0158bf)

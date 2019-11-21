@@ -1,4 +1,4 @@
-package aaron.springbootswagger.model;
+package aaron.qs.swagger.beans;
 
 import lombok.Data;
 import java.util.Date;
