@@ -1,6 +1,6 @@
 package aaron.qs.swagger.controller;
 
-import aaron.qs.swagger.model.Book;
+import aaron.qs.swagger.beans.Book;
 
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
